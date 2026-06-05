@@ -9,3 +9,9 @@ function areYouPlayingJango(name){
 
 areYouPlayingJango("Rudolf");
 areYouPlayingJango("Hitler");
+
+function areYouPlayingJango(name){
+    return console.log(name + (name[0].toLowerCase === 'r' ? ' plays' : ' does not play') + " banjo");
+}
+
+areYouPlayingJango("Rudolf");
