@@ -7,3 +7,11 @@ function squareDigits(num){
     }
   return Number(result);
 }
+
+
+
+function squareDigits(num){
+    return Number(num.toString().split('').map(item=>item*item).join(''));
+}
+
+console.log(squareDigits(123));
