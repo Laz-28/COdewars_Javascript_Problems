@@ -17,3 +17,16 @@ function findOdd(A) {
   
   
 }
+
+//Solution 2
+
+function findOdd(A){
+    let result = 0;
+    for(let item of A){
+        result ^= item;
+    }
+
+    return result;
+}
+
+console.log(findOdd([1,1,2,3,3,3]));
