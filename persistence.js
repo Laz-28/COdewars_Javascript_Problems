@@ -15,3 +15,26 @@ function persistence(num){
 }
 
 console.log(persistence(128))
+
+//Solution 2
+
+function persistence(num) {
+   
+  let newNum = num.toString();
+    let steps = 0;
+ 
+
+    while(newNum.length > 1){
+        let multiply = 1;
+  for(item of newNum){
+     multiply *= Number(item);
+  }
+  
+  newNum = multiply.toString();
+        steps++;
+    }
+
+    return `The number is ${Number(newNum)} and the steps are ${steps}`;
+}
+
+persistence(234);
