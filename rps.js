@@ -12,4 +12,29 @@ const rps = (p1, p2) => {
 }
 };
 
+
+
+console.log(rps("Rock","scissors"));
+
+function rps(p1, p2){
+    p1 = p1.toLowerCase();
+    p2 = p2.toLowerCase();
+if(p1===p2){
+    return "Draw!";
+}
+
+    let rules = {
+        rock:"scissors",
+        paper:"rock",
+        scissors: "paper"
+    }
+
+    if(p2 === rules[p1]){
+        return "Player1 won!"
+    }else{
+        return "Player2 won!"
+    }
+
+}
+
 console.log(rps("Rock","scissors"));
